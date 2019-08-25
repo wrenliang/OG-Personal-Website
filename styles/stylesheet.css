@@ -1,0 +1,230 @@
+/*PAGE DEFAULTS*/
+* {
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+}
+
+
+/*GLOBAL STYLING*/
+body {
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-weight: 200;
+}
+
+h1 {
+	font-weight: normal;
+	font-size: 32px;
+	margin: 0px;
+}
+
+
+h2 {
+	font-weight: normal;
+	font-size:24px;
+	margin: 0px;
+}
+
+
+
+ul {
+    list-style-type: none;
+    top: 0px;
+    overflow: hidden;
+    background-color: #393939;
+    position: relative;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+}
+
+li {
+	float: left;
+    padding-left: 20px;
+}
+
+li a {
+    display: block;
+    padding: 14px 20px;
+
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    }
+
+li a:hover {
+    font-weight: 300;
+}
+
+
+/*CLASS SPECIFIC*/
+.nav {
+    margin-top: 0px;
+    padding: 0px;
+}
+
+.content {
+    text-align: center;
+}
+
+.current-page a {
+    color: #ADADAD
+}
+
+/*HOME PAGE*/
+.home {
+
+}
+
+.home section {
+    width: 100vw;
+	height: 100vh;
+	margin-top: 0;
+	margin-bottom: 10px;
+}
+
+.highlights-list {
+    background-color: transparent;
+    width: 100%;
+    position: relative;
+    top: 60vh;
+    padding-bottom: 3vh;
+
+    z-index: 0;
+}
+
+.highlights-list li {
+    color: white;
+    width: 20vw;
+    border-left: 2px solid;
+    border-right: 2px solid;
+}
+
+.highlights-list li h3 {
+    font-weight: normal;
+    font-size: 26px;
+    text-align: center;
+
+}
+
+
+.split-screen {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    justify-content: flex-start;
+}
+.split-left {
+    width: 30vw;
+    height: 100vh;
+    position: relative;
+    left: 0;
+
+    overflow-x: hidden;
+    text-align: center;
+}
+
+.split-right {
+    width: 70vw;
+    height: 100vh;
+    position: relative;
+    right: 0;
+
+    overflow-x: hidden;
+    text-align: center;
+    float: right;
+}
+
+/*ABOUT PAGE*/
+.about{
+
+}
+
+.about h2{
+    color: yellowgreen;
+}
+
+.about p {
+    width: 50vw;
+}
+
+.about section {
+    margin-top: 50px;
+}
+
+
+/*PASSION PAGE*/
+.passion{
+
+}
+
+.view-frame {
+    width: 100vw;
+    height: 100vh;
+}
+
+
+
+/*ID SPECIFIC*/
+
+#welcome {
+    color: white;
+	font-size: 81px;
+    font-weight: 200;
+
+    position: relative;
+    top: 10vh;
+    left: auto;
+
+    z-index: 2;
+
+    visibility: hidden; /*to enable smooth JS animation*/
+}
+
+#personal-info {
+    color: whitesmoke;
+    font-size: 49px;
+    font-weight: 300;
+    line-height: 1.0;
+
+    position: relative;
+    top: 60vh;
+    left: auto;
+
+    z-index: 0;
+
+}
+
+#main-nav{
+	position: fixed;
+}
+
+#h-container1 {
+	background-image: url(../images/main-landscape-edit.png);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+	background-size: cover;
+}
+
+
+#h-container2 {
+	/*background-image: url(../images/test-photo.jpg);*/
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+	background-size: cover;
+}
+
+#down-arrow {
+    position: relative;
+    top: 61vh;
+}
+
+
+
+#projects {
+    padding-top: 10vw;
+
+}

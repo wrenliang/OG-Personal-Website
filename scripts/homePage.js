@@ -29,7 +29,6 @@ window.onload = function () {
 
 
 var slideIndex = 1;
-
 function incrementSlide(direction) {
     updateSlides(slideIndex + direction);
 }

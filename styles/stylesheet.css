@@ -53,7 +53,7 @@ li a {
     }
 
 li a:hover {
-    font-weight: 300;
+    font-weight: 400;
 }
 
 
@@ -258,4 +258,12 @@ li a:hover {
 #projects {
     padding-top: 10vw;
 
+}
+
+
+
+
+/*Other stuff*/
+::-webkit-scrollbar {
+    display: none;
 }

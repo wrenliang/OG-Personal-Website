@@ -31,7 +31,7 @@
                     </li>
                 </ul>
 				<h2 id="personal-info"> UBC Student - Year 2 </h2>
-                <a id="down-arrow" href="#projects-link">
+                <a id="down-arrow" href="#projects">
                     <img src="images/down-arrow-white.png" alt="Down arrow" style="width:50px;height:40px;border:0;"/>
                 </a>
 
@@ -40,7 +40,7 @@
 		<section id=h-container2>
             <div class="split-screen">
                 <div class="split-left">
-                    <h2>Projects: </h2>
+                    <h2 id="projects">Projects: </h2>
                     <p>
                         Here is an overview of the projects I've been pursuing in my free time.
                         I love the journey that starts with learning new skills, that transitions into practicing them, and finally, that culminates with applying those skills in a challenge to create something useful.
@@ -49,6 +49,35 @@
                 </div>
                 <div class="split-right">
                     <h2>Slideshow</h2>
+                    <div id="slideshow">
+                        <div class="slides fade">
+                            <div class="pagenumber">
+                            <p>1/3</p>
+                            </div>
+                            <img src="images/yellow.jpg" style="width:100%"/>
+                            <div class="caption">Caption One</div>
+                        </div>
+
+                        <div class="slides fade">
+                            <div class="pagenumber">
+                                <p>2/3</p>
+                            </div>
+                            <img src="images/red.jpg" style="width:100%" />
+                            <div class="caption">Caption Two</div>
+                        </div>
+
+                        <div class="slides fade">
+                            <div class="pagenumber">
+                                <p>3/3</p>
+                            </div>
+                            <img src="images/green.jpg" style="width:100%" />
+                            <div class="caption">Caption Three</div>
+                        </div>
+
+                        <a class="back" onclick="incrementSlide(-1)">&#10094;</a>
+                        <a class="forward" onclick="incrementSlide(1)">&#10095;</a>
+
+                    </div>
                 </div>
             </div>
 

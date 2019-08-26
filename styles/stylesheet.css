@@ -112,6 +112,8 @@ li a:hover {
     width: 100vw;
     height: 100vh;
 
+    padding-top: 5vh;
+
     display: flex;
     justify-content: flex-start;
 }
@@ -127,9 +129,10 @@ li a:hover {
 
 .split-right {
     width: 70vw;
-    height: 100vh;
+    height: 95vh;
     position: relative;
     right: 0;
+    padding-top: 5vh;
 
     overflow-x: hidden;
     text-align: center;
@@ -161,7 +164,6 @@ li a:hover {
 .back:hover, .forward:hover {
     background-color: rgba(0,0,0,0.3);
 }
-
 
 
 /*--Slideshow---*/
@@ -255,9 +257,8 @@ li a:hover {
 
 
 
-#projects {
-    padding-top: 10vw;
-
+#projects-title{
+    padding-top: 10vh;
 }
 
 

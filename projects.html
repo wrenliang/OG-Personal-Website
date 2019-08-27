@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Projects">
+    <title>Projects</title>
+    <link rel="stylesheet" href="styles/stylesheet.css" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="scripts/projectsPage.js"></script>
+</head>
+<body class="projects">
+    <nav>
+        <ul>
+            <li> <a href="index.html" title="Home">Home</a>
+            <li> <a href="about.html" title="About">About</a>
+            <li class="current-page"> <a href="projects.html" title="Projects">Projects</a>
+            <li> <a href="passion.html" title="Passion">Passion</a>
+            <li> <a href="" title="Resume">Resume</a>
+            <li> <a href="" title="Contact">Contact</a>
+        </ul>
+    </nav>
+    <section>
+        <div class="split-screen">
+            <div class="split-left">
+                <h1 id="projects-title">Projects </h1>
+            </div>
+            <div class="split-right">
+                <h2></h2>
+                <div id="slideshow">
+                    <div class="slides fade">
+                        <img src="images/arduino-slide.png" style="width:100%" />
+                        <div class="caption">1/3</div>
+                    </div>
+
+                    <div class="slides fade">
+                        <img src="images/weather-slide.png" style="width:100%" />
+                        <div class="caption">2/3</div>
+                    </div>
+
+                    <div class="slides fade">
+                        <img src="images/website-slide.png" style="width:100%" />
+                        <div class="caption">3/3</div>
+                    </div>
+
+                    <a class="back" onclick="incrementSlide(-1)">&#10094;</a>
+                    <a class="forward" onclick="incrementSlide(1)">&#10095;</a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+</body>
+</html>

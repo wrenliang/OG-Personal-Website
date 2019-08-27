@@ -87,7 +87,7 @@ li a:hover {
     background-color: transparent;
     width: 100%;
     position: relative;
-    top: 60vh;
+    top: 65vh;
     padding-bottom: 3vh;
 
     z-index: 0;
@@ -279,7 +279,7 @@ li a:hover {
 
 #down-arrow {
     position: relative;
-    top: 61vh;
+    top: 65vh;
 }
 
 
@@ -288,7 +288,9 @@ li a:hover {
     padding-top: 10vh;
 }
 
-
+#project-description{
+    padding-left: 12px;
+}
 
 
 /*Other stuff*/

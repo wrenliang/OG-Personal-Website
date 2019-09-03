@@ -286,11 +286,11 @@ li a:hover {
 
 
 #h-container2 {
-	/*background-image: url(../images/test-photo.jpg);*/
-	background-position: center center;
-	background-repeat: no-repeat;
-	background-attachment: scroll;
-	background-size: cover;
+    background-color: #f5f5f5;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
 }
 
 #down-arrow {
@@ -310,8 +310,32 @@ li a:hover {
 }
 
 
-
 /*---Projects Page---*/
+#welcome-banner {
+    height: 100vh;
+    width: 100vw;
+    background-image: url(../images/technology-backdrop-edit.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+}
+
+
+#welcome-title {
+    color: white;
+    font-size: 81px;
+    font-weight: 100;
+
+    position: relative;
+    width: 100vw;
+    text-align: center;
+    top: 30vh;
+
+    visibility: hidden; /*to enable smooth JS animation*/
+}
+
+
 
 
 

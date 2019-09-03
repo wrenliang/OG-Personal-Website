@@ -1,6 +1,6 @@
 //Fade in welcome message
 window.onload = function () {
-    var elem = document.getElementById("welcome-title");
+    var elem = document.getElementById("title");
     var opacity = 0;
     var fadeRate = 0.01;
     elem.style.opacity = opacity;

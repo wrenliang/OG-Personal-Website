@@ -6,6 +6,7 @@
     <title>Contact Info</title>
     <link rel="stylesheet" href="styles/stylesheet.css" type="text/css">
     <script type="text/javascript" src="scripts/contactPage.js"></script>
+    <script src="https://kit.fontawesome.com/924a340b24.js"></script>
 </head>
 <body class="contact">
     <nav>
@@ -18,20 +19,19 @@
             <li class="current-page"> <a href="contact.html" title="Contact">Contact</a>
         </ul>
     </nav>
-    <h1>Contact Info</h1>
+    <h1 id="contact-title">Contact Info</h1>
     <article>
-        <section>
-            <h2>Email:</h2>
-            <p>
-                wren.liang@gmail.com
-            </p>
-        </section>
-        <section>
-            <h2>Phone: </h2>
-            <p>
-                587-703-1208
-            </p>
-        </section>
+        <div class="split-screen">
+            <div class="split-left-50">
+                <i class="fas fa-mobile-alt fa-5x" style="color:#393939;"></i>
+                <a href="tel:5877031208"> <br /> 587-703-1208</a>
+            </div>
+            <div class="split-right-50">
+                <i class="fas fa-envelope-open-text fa-5x" style="color:#393939;"></i>
+                <a href="mailto:wren.liang@gmail.com" target="_top"> <br /> wren.liang@gmail.com</a>
+            </div>
+        </div>
+
     </article>
 </body>
 </html>

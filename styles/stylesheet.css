@@ -2,6 +2,7 @@
 * {
 	margin: 0 0 0 0;
 	padding: 0 0 0 0;
+    scroll-behavior: smooth;
 }
 
 
@@ -106,6 +107,7 @@ li a:hover {
     text-align: center;
 
 }
+
 
 /*--Slideshow---*/
 .split-screen {
@@ -321,23 +323,46 @@ li a:hover {
     background-size: cover;
 }
 
-
-#welcome-title {
+#title {
     color: white;
     font-size: 81px;
     font-weight: 100;
-
     position: relative;
     width: 100vw;
     text-align: center;
     top: 30vh;
-
     visibility: hidden; /*to enable smooth JS animation*/
 }
 
 
+/*---Contact Page----*/
+#contact-title {
+    color: black;
+    font-size: 81px;
+    font-weight: 100;
+    position: relative;
+    width: 100vw;
+    text-align: center;
+}
 
+.split-left-50 {
+    width: 50vw;
+    height: 100vh;
+    position: relative;
+    left: 0;
+    overflow-x: hidden;
+    text-align: center;
+}
 
+.split-right-50 {
+    width: 50vw;
+    height: 100vh;
+    position: relative;
+    right: 0;
+    overflow-x: hidden;
+    text-align: center;
+    float: right;
+}
 
 /*Other stuff*/
 ::-webkit-scrollbar {

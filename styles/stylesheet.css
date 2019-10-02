@@ -283,15 +283,14 @@ li a:hover {
 #welcome {
     color: white;
 	font-size: 81px;
-    font-weight: 200;
+    font-weight: 100;
 
     position: relative;
-    top: 80vh;
+    top: 40vh;
     left: auto;
 
     z-index: 2;
-
-    visibility: hidden; /*to enable smooth JS animation*/
+    
 }
 
 #personal-info {

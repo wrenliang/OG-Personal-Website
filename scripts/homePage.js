@@ -1,13 +1,13 @@
 //Fade in welcome message
 window.onload = function () {
-    var elem = document.getElementById("welcome");
+    var elem = document.getElementById("down-arrow");
     var opacity = 0;
     var fadeRate = 0.01;
     elem.style.opacity = opacity;
     elem.style.visibility = "visible";
     var interval;
 
-    var startDelay = setTimeout(startAnim, 667);
+    var startDelay = setTimeout(startAnim, 1800);
 
     function startAnim() {
         interval = setInterval(stepFade, 10);
@@ -39,8 +39,8 @@ window.onload = function () {
         translateZ: 0,
         opacity: [0,1],
         easing: "easeOutExpo",
-        duration: 2000,
-        delay: (el, i) => 500 + 150 * i
+        duration: 1250,
+        delay: (el, i) => 500 + 75 * i
         }).add({
         });
 

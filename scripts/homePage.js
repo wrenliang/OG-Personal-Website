@@ -24,7 +24,52 @@ window.onload = function () {
 
 
     updateSlides(slideIndex);
+
+
+
+    //TESTING THE CP CODE
+        // Wrap every letter in a span
+        var textWrapper = document.querySelector('.ml12');
+        textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+        anime.timeline({loop: false})
+        .add({
+        targets: '.ml12 .letter',
+        translateX: [40,0],
+        translateZ: 0,
+        opacity: [0,1],
+        easing: "easeOutExpo",
+        duration: 2000,
+        delay: (el, i) => 500 + 150 * i
+        }).add({
+        });
+
 }
+
+
+window.onscroll = function () {
+
+    var leftNav = document.getElementById("left-nav");
+    var rightNav = document.getElementById("right-nav");
+    var mainNav = document.getElementById("main-nav");
+
+    if (document.documentElement.scrollTop >= 100) {
+        leftNav.classList.add("nav-colored");
+        rightNav.classList.add("nav-colored");
+        leftNav.classList.remove("nav-transparent");
+        rightNav.classList.remove("nav-transparent");
+    } else {
+        leftNav.classList.add("nav-transparent");
+        rightNav.classList.add("nav-transparent");
+        leftNav.classList.remove("nav-colored");
+        rightNav.classList.remove("nav-colored");
+    }
+
+}
+
+
+
+
 
 
 
@@ -51,5 +96,6 @@ function updateSlides(newIndex) {
     slides[newIndex - 1].style.display = "block";
     slides[newIndex - 1].className += " active";
 }
+
 
 

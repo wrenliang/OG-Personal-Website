@@ -53,7 +53,7 @@ window.onscroll = function () {
     var rightNav = document.getElementById("right-nav");
     var mainNav = document.getElementById("main-nav");
 
-    if (document.documentElement.scrollTop >= 100) {
+    if (document.documentElement.scrollTop >= 75) {
         leftNav.classList.add("nav-colored");
         rightNav.classList.add("nav-colored");
         leftNav.classList.remove("nav-transparent");

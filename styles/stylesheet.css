@@ -40,6 +40,11 @@ h2 {
     float: left;
 }
 
+#left-nav li a:hover {
+    text-decoration: none;
+    color: white;
+}
+
 #right-nav {
     list-style-type: none;
     top: 0px;
@@ -49,6 +54,11 @@ h2 {
     width: 50%;
     display: flex;
     justify-content: center;
+}
+
+#right-nav li a:hover {
+    text-decoration: none;
+    color: white;
 }
 
 li {
@@ -311,7 +321,7 @@ li a:hover {
 	position: fixed;
 }
 
-#h-container1 {
+#intro-container {
 	background-image: url(../images/main-landscape-edit.png);
 	background-position: center center;
 	background-repeat: no-repeat;
@@ -319,8 +329,16 @@ li a:hover {
 	background-size: cover;
 }
 
+#overview-me-container {
+    background-color: #E4E4E4;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    height: 125vh;
+    width: 100vw;
+}
 
-#h-container2 {
+#project-container {
     background-color: #f5f5f5;
     background-position: center center;
     background-repeat: no-repeat;
@@ -330,7 +348,7 @@ li a:hover {
 
 #down-arrow {
     position: relative;
-    top: 80vh;
+    top: 78vh;
 }
 
 

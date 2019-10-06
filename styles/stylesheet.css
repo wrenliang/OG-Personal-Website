@@ -21,7 +21,7 @@ h1 {
 
 h2 {
 	font-weight: normal;
-	font-size:24px;
+	font-size: 30px;
 	margin: 0px;
 }
 
@@ -72,9 +72,9 @@ li {
 
 li a {
     display: block;
-    padding: 14px 20px;
+    padding: 8px 24px;
 
-    font-size: 25px;
+    font-size: 24px;
 
     color: white;
     text-align: center;
@@ -319,6 +319,7 @@ li a:hover {
 
 #main-nav{
 	position: fixed;
+    z-index: 999;
 }
 
 #intro-container {
@@ -327,15 +328,53 @@ li a:hover {
 	background-repeat: no-repeat;
 	background-attachment: scroll;
 	background-size: cover;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
 }
 
 #overview-me-container {
-    background-color: #E4E4E4;
+    background-image: url(../images/turquoise-mountains.png);
+    background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: scroll;
-    height: 125vh;
     width: 100vw;
+    height: 140vh;
+}
+
+.overview-text {
+    padding-top: 60px;
+    text-decoration-color: #5B5B5B;
+    font-weight: 100;
+    font-size: 4em;
+    text-align: center;
+}
+
+#hey-there{
+    padding-top: 1.5em;
+}
+
+#little-more{
+}
+
+#card-container {
+    padding-top: 5vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+}
+
+.card {
+    float: left;
+    background-color: rgba(249,249,249,0.8);
+}
+
+.card-title {
+    text-align: center;
+}
+
+.card-text{
+    text-align: center;
 }
 
 #project-container {
@@ -348,7 +387,7 @@ li a:hover {
 
 #down-arrow {
     position: relative;
-    top: 78vh;
+    top: 75vh;
 }
 
 

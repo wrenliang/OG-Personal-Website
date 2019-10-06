@@ -30,19 +30,42 @@
                 <a id="down-arrow" href="#projects-link">
                     <img src="images/down-arrow-white.png" alt="Down arrow" style="width:100px;height:75px;border:0;"/>
                 </a>
-
 			</div>
 		</section>
 
         <section id="overview-me-container">
-            <h2>Hey there! </h2>
+            <h2 class="overview-text" id="hey-there">Hey there!</h2>
+            <h2 class="overview-text" id="little-more">Here's a little more about me</h2>
 
-            <div class="card" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+            <div id="card-container">
+                <div class="card" style="width: 26rem;">
+                    <a href="https://you.ubc.ca/ubc_programs/computer-engineering/">
+                        <img src="images/ece-logo.png" class="card-img-top" alt="ECE logo">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">UBC Computer Engineering Student</h5>
+                        <p class="card-text">Currently studying Computer Engineering with Co-Op at the University of British Columbia</p>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 26rem;">
+                    <a href="https://www.ubclaunchpad.com">
+                        <img src="images/launchpad-rocket.png" class="card-img-top" alt="LaunchPad rocket">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">LaunchPad Software Engineering Team</h5>
+                        <p class="card-text">Collaborating on a food waste reduction application as a core iOS Developer</p>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 26rem;">
+                    <a href="projects.html">
+                        <img src="images/lightbulb.png" class="card-img-top" alt="Creative Lightbulb">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">Creative Independent Developer</h5>
+                        <p class="card-text">Love building passion projects and refining the art and design that goes into them</p>
+                    </div>
                 </div>
             </div>
 
@@ -52,7 +75,7 @@
             <span id="projects-link"></span>
             <div class="split-screen">
                 <div class="split-left">
-                    <h2 id="projects-title">Projects: </h2>
+                    <h3 id="projects-title">Projects: </h3>
                     <p id="project-description">
                         <br />
                         Here is an overview of the projects I've been pursuing in my free time.
@@ -65,7 +88,6 @@
                     <a class="learn-more" href="projects.html">Learn More</a>
                 </div>
                 <div class="split-right">
-                    <h2></h2>
                     <div id="slideshow">
                         <div class="slides fade">
                             <img src="images/arduino-slide.png" style="width:100%"/>

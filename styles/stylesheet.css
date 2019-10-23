@@ -2,7 +2,6 @@
 * {
 	margin: 0 0 0 0;
 	padding: 0 0 0 0;
-    scroll-behavior: smooth;
 }
 
 
@@ -86,11 +85,11 @@ li a:hover {
 }
 
 .nav-colored {
-    background: rgba(45, 45, 45, 0.90);
+    color: #5B5B5B;
 }
 
 .nav-transparent {
-    background-color: transparent;
+    color: white;
 }
 
 /*---Nav bar finish---*/
@@ -339,26 +338,25 @@ li a:hover {
     background-repeat: no-repeat;
     background-attachment: scroll;
     width: 100vw;
-    height: 140vh;
+    height: 100vh;
 }
 
 .overview-text {
-    padding-top: 60px;
     text-decoration-color: #5B5B5B;
     font-weight: 100;
-    font-size: 4em;
+    font-size: 3em;
     text-align: center;
 }
 
 #hey-there{
-    padding-top: 1.5em;
+    padding-top: 1em;
 }
 
 #little-more{
 }
 
 #card-container {
-    padding-top: 5vh;
+    padding-top: 10px;
     width: 100vw;
     display: flex;
     justify-content: space-around;
@@ -401,6 +399,14 @@ li a:hover {
     padding-bottom: 50px;
 }
 
+
+#project-section{
+    background-color: blue;
+}
+
+#slide0{
+    background-color: green;
+}
 
 /*---Projects Page---*/
 #welcome-banner {

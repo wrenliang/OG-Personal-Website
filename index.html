@@ -5,11 +5,13 @@
     <meta name="description" content="Personal website project of Wren Liang">
     <title>Wren Liang</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.7/fullpage.css" type="text/css">
     <link rel="stylesheet" href="styles/stylesheet.css" type="text/css">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.7/fullpage.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
     <script type="text/javascript" src="scripts/homePage.js"></script>
 </head>
@@ -19,98 +21,144 @@
                 <li > <a id="homepage-link" href="index.html" title="Home"> Wren Liang </a> </li>
             </ul>
 			<ul id="right-nav">
-				<li> <a href="projects.html" title="Projects">Projects</a>
-				<li> <a href="passion.html" title="Passion">Passion</a>
-				<li> <a href="resume.html" title="Resume">Resume</a>
+				<li> <a id="projects-link" href="projects.html" title="Projects">Projects</a>
+				<li> <a id="passion-link" href="passion.html" title="Passion">Passion</a>
+				<li> <a id="resume-link" href="resume.html" title="Resume">Resume</a>
 			</ul>
 		</nav>
-		<section id="intro-container">
-			<div class="content">
-                <h1 class="ml12" id="welcome"> <b>Welcome</b>, my name is Wren </h1>
-                <a id="down-arrow" href="#projects-link">
-                    <img src="images/down-arrow-white.png" alt="Down arrow" style="width:100px;height:75px;border:0;"/>
-                </a>
-			</div>
-		</section>
 
-        <section id="overview-me-container">
-            <h2 class="overview-text" id="hey-there">Hey there!</h2>
-            <h2 class="overview-text" id="little-more">Here's a little more about me</h2>
+        <div id="fullpage">
+            <div class="section" id="section0">
+                <section id="intro-container">
+                    <div class="content">
+                        <h1 class="ml12" id="welcome"> Welcome, my name is Wren </h1>
+                        <a id="down-arrow">
+                            <img src="images/down-arrow-white.png" alt="Down arrow" style="width:100px;height:75px;border:0;" />
+                        </a>
+                    </div>
+                </section>
+            </div>
+            <div class="section" id="section1">
+                <section id="overview-me-container">
+                    <h2 class="overview-text" id="hey-there">Hey there!</h2>
+                    <h2 class="overview-text" id="little-more">Here's a little more about me</h2>
 
-            <div id="card-container">
-                <div class="card" style="width: 26rem;">
-                    <a href="https://you.ubc.ca/ubc_programs/computer-engineering/" target="_blank">
-                        <img src="images/ece-logo.png" class="card-img-top" alt="ECE logo">
-                    </a>
-                    <div class="card-body">
-                        <h5 class="card-title">UBC Computer Engineering Student</h5>
-                        <p class="card-text">Currently studying Computer Engineering with Co-Op at the University of British Columbia</p>
+                    <div id="card-container">
+                        <div class="card" style="width: 23rem;">
+                            <a href="https://you.ubc.ca/ubc_programs/computer-engineering/" target="_blank">
+                                <img src="images/ece-logo.png" class="card-img-top" alt="ECE logo">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">UBC Computer Engineering Student</h5>
+                                <p class="card-text">Currently studying Computer Engineering with Co-Op at the University of British Columbia</p>
+                            </div>
+                        </div>
+
+                        <div class="card" style="width: 23rem;">
+                            <a href="https://www.ubclaunchpad.com" target="_blank">
+                                <img src="images/launchpad-rocket.png" class="card-img-top" alt="LaunchPad rocket">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">LaunchPad Software Engineering Team</h5>
+                                <p class="card-text">Collaborating on a food waste reduction application as a core iOS Developer</p>
+                            </div>
+                        </div>
+
+                        <div class="card" style="width: 23rem;">
+                            <a href="projects.html">
+                                <img src="images/lightbulb.png" class="card-img-top" alt="Creative Lightbulb">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">Creative Independent Developer</h5>
+                                <p class="card-text">Love building passion projects and refining the art and design that goes into them</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="section" id="section3">
+                <section id="project-container">
+                <div class="split-screen">
+                    <div class="split-left">
+                        <h3 id="projects-title">Projects: </h3>
+                        <p id="project-description">
+                            <br />
+                            Here is an overview of the projects I've been pursuing in my free time.
+                            I love the journey that starts with learning new skills, that transitions into practicing them, and finally, that culminates with applying those skills in a challenge to create something useful.
+                            <br /> 
+                            <br />
+                            My most recent ventures focus around iOS development and web design. I am still in the process of learning many of the technologies and am eager to continue developing exciting projects on these platforms.
+                        </p>
+
+                        <a class="learn-more" href="projects.html">Learn More</a>
+                    </div>
+                    <div class="split-right">
+                        <div id="slideshow">
+                            <div class="slides fade">
+                                <img src="images/arduino-slide.png" style="width:100%"/>
+                                <div class="caption">1/3</div>
+                            </div>
+
+                            <div class="slides fade">
+                                <img src="images/weather-slide.png" style="width:100%" />
+                                <div class="caption">2/3</div>
+                            </div>
+
+                            <div class="slides fade">
+                                <img src="images/website-slide.png" style="width:100%" />
+                                <div class="caption">3/3</div>
+                            </div>
+                            
+                            <a class="back" onclick="incrementSlide(-1)">&#10094;</a>
+                            <a class="forward" onclick="incrementSlide(1)">&#10095;</a>
+
+                        </div>
                     </div>
                 </div>
-
-                <div class="card" style="width: 26rem;">
-                    <a href="https://www.ubclaunchpad.com" target="_blank">
-                        <img src="images/launchpad-rocket.png" class="card-img-top" alt="LaunchPad rocket">
-                    </a>
-                    <div class="card-body">
-                        <h5 class="card-title">LaunchPad Software Engineering Team</h5>
-                        <p class="card-text">Collaborating on a food waste reduction application as a core iOS Developer</p>
-                    </div>
-                </div>
-
-                <div class="card" style="width: 26rem;">
-                    <a href="projects.html">
-                        <img src="images/lightbulb.png" class="card-img-top" alt="Creative Lightbulb">
-                    </a>
-                    <div class="card-body">
-                        <h5 class="card-title">Creative Independent Developer</h5>
-                        <p class="card-text">Love building passion projects and refining the art and design that goes into them</p>
-                    </div>
-                </div>
+                </section>
             </div>
 
-        </section>
-
-		<section id="project-container">
-            <span id="projects-link"></span>
-            <div class="split-screen">
-                <div class="split-left">
-                    <h3 id="projects-title">Projects: </h3>
-                    <p id="project-description">
-                        <br />
-                        Here is an overview of the projects I've been pursuing in my free time.
-                        I love the journey that starts with learning new skills, that transitions into practicing them, and finally, that culminates with applying those skills in a challenge to create something useful.
-                        <br /> 
-                        <br />
-                        My most recent ventures focus around iOS development and web design. I am still in the process of learning many of the technologies and am eager to continue developing exciting projects on these platforms.
-                    </p>
-
-                    <a class="learn-more" href="projects.html">Learn More</a>
-                </div>
-                <div class="split-right">
-                    <div id="slideshow">
-                        <div class="slides fade">
-                            <img src="images/arduino-slide.png" style="width:100%"/>
-                            <div class="caption">1/3</div>
+            <div class="section" id="section4">
+                <section id="project-section">
+                    <div class="slide" id="slide0">
+                        <div class="jumbotron" style="width: 80vw;">
+                            <h1 class="display-4">Hello, world!</h1>
+                            <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+                            <hr class="my-4">
+                            <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+                            <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
                         </div>
-
-                        <div class="slides fade">
-                            <img src="images/weather-slide.png" style="width:100%" />
-                            <div class="caption">2/3</div>
+                    </div>
+                    <div class="slide"> <h1>Slide 2</h1> 
+                        <div class="card mb-3">
+                            <img src="..." class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            </div>
                         </div>
-
-                        <div class="slides fade">
-                            <img src="images/website-slide.png" style="width:100%" />
-                            <div class="caption">3/3</div>
-                        </div>
-                        
-                        <a class="back" onclick="incrementSlide(-1)">&#10094;</a>
-                        <a class="forward" onclick="incrementSlide(1)">&#10095;</a>
 
                     </div>
-                </div>
-            </div>
+                    <div class="slide"> <h1>Slide 3</h1> 
+                        <div class="card">
+                            <img src="..." class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            </div>
+                        </div>
 
-        </section>
+                    </div>
+                    <div class="slide"> <h1>Slide 4</h1> </div>
+                </section>
+            </div>
+        </div>
+
+
+
+
+
 	</body>
 </html>

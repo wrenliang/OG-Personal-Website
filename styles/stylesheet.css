@@ -2,7 +2,6 @@
 * {
 	margin: 0 0 0 0;
 	padding: 0 0 0 0;
-    scroll-behavior: smooth;
 }
 
 
@@ -21,22 +20,44 @@ h1 {
 
 h2 {
 	font-weight: normal;
-	font-size:24px;
+	font-size: 30px;
 	margin: 0px;
 }
 
 
+/*---For Nav Bar---*/
 
-ul {
+#left-nav {
     list-style-type: none;
     top: 0px;
+    left: 0px;
     overflow: hidden;
-    background-color: #393939;
-    position: relative;
-    width: 100%;
-    z-index: 1;
+    position: fixed;
+    width: 50%;
     display: flex;
     justify-content: center;
+    float: left;
+}
+
+#left-nav li a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+#right-nav {
+    list-style-type: none;
+    top: 0px;
+    right: 0px;
+    overflow: hidden;
+    position: fixed;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+#right-nav li a:hover {
+    text-decoration: none;
+    color: white;
 }
 
 li {
@@ -44,9 +65,15 @@ li {
     padding-left: 20px;
 }
 
+#homepage-link {
+
+}
+
 li a {
     display: block;
-    padding: 14px 20px;
+    padding: 8px 24px;
+
+    font-size: 24px;
 
     color: white;
     text-align: center;
@@ -56,6 +83,17 @@ li a {
 li a:hover {
     font-weight: 400;
 }
+
+.nav-colored {
+    color: #5B5B5B;
+}
+
+.nav-transparent {
+    color: white;
+}
+
+/*---Nav bar finish---*/
+
 
 
 /*CLASS SPECIFIC*/
@@ -69,7 +107,7 @@ li a:hover {
 }
 
 .current-page a {
-    color: #ADADAD;
+    color: #EBEBEB;
 }
 
 /*HOME PAGE*/
@@ -84,6 +122,9 @@ li a:hover {
 	margin-bottom: 10px;
 }
 
+
+/*DELETED*/
+/*
 .highlights-list {
     background-color: transparent;
     width: 100%;
@@ -108,12 +149,14 @@ li a:hover {
 
 }
 
+*/
+
 
 /*--Slideshow---*/
 .split-screen {
     width: 100vw;
     height: 100vh;
-
+    z-index: 0;
     padding-top: 5vh;
 
     display: flex;
@@ -124,7 +167,7 @@ li a:hover {
     height: 100vh;
     position: relative;
     left: 0;
-
+    z-index: 0;
     overflow-x: hidden;
     text-align: center;
 }
@@ -135,7 +178,7 @@ li a:hover {
     position: relative;
     right: 0;
     padding-top: 5vh;
-
+    z-index: 0;
     overflow-x: hidden;
     text-align: center;
     float: right;
@@ -249,15 +292,14 @@ li a:hover {
 #welcome {
     color: white;
 	font-size: 81px;
-    font-weight: 200;
+    font-weight: 100;
 
     position: relative;
-    top: 10vh;
+    top: 40vh;
     left: auto;
 
     z-index: 2;
-
-    visibility: hidden; /*to enable smooth JS animation*/
+    
 }
 
 #personal-info {
@@ -276,18 +318,65 @@ li a:hover {
 
 #main-nav{
 	position: fixed;
+    z-index: 999;
 }
 
-#h-container1 {
+#intro-container {
 	background-image: url(../images/main-landscape-edit.png);
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-attachment: scroll;
 	background-size: cover;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
 }
 
+#overview-me-container {
+    background-image: url(../images/turquoise-mountains.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    width: 100vw;
+    height: 100vh;
+    margin-bottom: 0px;
+}
 
-#h-container2 {
+.overview-text {
+    text-decoration-color: #5B5B5B;
+    font-weight: 100;
+    font-size: 3em;
+    text-align: center;
+}
+
+#hey-there{
+    padding-top: 1em;
+}
+
+#little-more{
+}
+
+#card-container {
+    padding-top: 10px;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+}
+
+.card {
+    float: left;
+    background-color: rgba(249,249,249,0.8);
+}
+
+.card-title {
+    text-align: center;
+}
+
+.card-text{
+    text-align: center;
+}
+
+#project-container {
     background-color: #f5f5f5;
     background-position: center center;
     background-repeat: no-repeat;
@@ -297,7 +386,7 @@ li a:hover {
 
 #down-arrow {
     position: relative;
-    top: 65vh;
+    top: 75vh;
 }
 
 
@@ -309,6 +398,37 @@ li a:hover {
 #project-description{
     padding-left: 12px;
     padding-bottom: 50px;
+}
+
+
+#project-section{
+    background-image: url(../images/technology-backdrop-edit.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.jumbotron {
+    margin: auto;
+    width: 50%;
+}
+
+#project-intro {
+    background-color: transparent;
+    text-align: center;
+}
+
+#project-intro h1 {
+    color: white;
+    font-weight: 100;
+}
+
+#project-intro p {
+    color: white;
+    font-weight: 100;
+}
+
+#slide0{
 }
 
 
@@ -367,4 +487,18 @@ li a:hover {
 /*Other stuff*/
 ::-webkit-scrollbar {
     display: none;
+}
+
+
+
+
+/*Welcome animation test*/
+.ml12 {
+    font-size: 1.7em;
+    letter-spacing: 0.05em;
+}
+
+.ml12 .letter {
+    display: inline-block;
+    line-height: 1em;
 }

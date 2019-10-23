@@ -1,85 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta name="description" content="Personal website project of Wren Liang">
-		<title>Wren Liang</title>
-		<link rel="stylesheet" href="styles/stylesheet.css" type="text/css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <script type="text/javascript" src="scripts/homePage.js"></script>
-	</head>
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Personal website project of Wren Liang">
+    <title>Wren Liang</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.7/fullpage.css" type="text/css">
+    <link rel="stylesheet" href="styles/stylesheet.css" type="text/css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.7/fullpage.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script type="text/javascript" src="scripts/homePage.js"></script>
+</head>
 	<body class="home">
-		<nav>
-			<ul id="main-nav">
-				<li> <a href="index.html" title="Home">Home</a>
-				<li> <a href="about.html" title="About">About</a>
-				<li> <a href="projects.html" title="Projects">Projects</a>
-				<li> <a href="passion.html" title="Passion">Passion</a>
-				<li> <a href="resume.html" title="Resume">Resume</a>
-				<li> <a href="contact.html" title="Contact">Contact</a>
+		<nav id="main-nav">
+            <ul id="left-nav">
+                <li > <a id="homepage-link" href="index.html" title="Home"> Wren Liang </a> </li>
+            </ul>
+			<ul id="right-nav">
+				<li> <a id="projects-link" href="#" title="Projects">Projects</a>
+				<li> <a id="passion-link" href="#" title="Passion">Passion</a>
+				<li> <a id="resume-link" href="resume.html" target="_blank" title="Resume">Resume</a>
 			</ul>
 		</nav>
-		<section id="h-container1">
-			<div class="content">
-				<h1 id="welcome"> <b>Welcome</b>, from Wren Liang </h1>
-                <ul class="highlights-list">
-                    <li>
-                        <h3>University of British Columbia</h3>
-                    </li>
-                    <li>
-                        <h3>Computer Engineering Major</h3>
-                    </li>
-                    <li>
-                        <h3>Independent Developer</h3>
-                    </li>
-                </ul>
-                <a id="down-arrow" href="#projects-link">
-                    <img src="images/down-arrow-white.png" alt="Down arrow" style="width:50px;height:40px;border:0;"/>
-                </a>
 
-			</div>
-		</section>
-		<section id="h-container2">
-            <span id="projects-link"></span>
-            <div class="split-screen">
-                <div class="split-left">
-                    <h2 id="projects-title">Projects: </h2>
-                    <p id="project-description">
-                        <br />
-                        Here is an overview of the projects I've been pursuing in my free time.
-                        I love the journey that starts with learning new skills, that transitions into practicing them, and finally, that culminates with applying those skills in a challenge to create something useful.
-                        <br /> 
-                        <br />
-                        My most recent ventures focus around iOS development and web design. I am still in the process of learning many of the technologies and am eager to continue developing exciting projects on these platforms.
-                    </p>
-
-                    <a class="learn-more" href="projects.html">Learn More</a>
-                </div>
-                <div class="split-right">
-                    <h2></h2>
-                    <div id="slideshow">
-                        <div class="slides fade">
-                            <img src="images/arduino-slide.png" style="width:100%"/>
-                            <div class="caption">1/3</div>
-                        </div>
-
-                        <div class="slides fade">
-                            <img src="images/weather-slide.png" style="width:100%" />
-                            <div class="caption">2/3</div>
-                        </div>
-
-                        <div class="slides fade">
-                            <img src="images/website-slide.png" style="width:100%" />
-                            <div class="caption">3/3</div>
-                        </div>
-                        
-                        <a class="back" onclick="incrementSlide(-1)">&#10094;</a>
-                        <a class="forward" onclick="incrementSlide(1)">&#10095;</a>
-
+        <div id="fullpage">
+            <div class="section" id="section0">
+                <section id="intro-container">
+                    <div class="content">
+                        <h1 class="ml12" id="welcome"> Welcome, my name is Wren </h1>
+                        <a id="down-arrow">
+                            <img src="images/down-arrow-white.png" alt="Down arrow" style="width:100px;height:75px;border:0;" />
+                        </a>
                     </div>
-                </div>
+                </section>
+            </div>
+            <div class="section" id="section1">
+                <section id="overview-me-container">
+                    <h2 class="overview-text" id="hey-there">Hey there!</h2>
+                    <h2 class="overview-text" id="little-more">Here's a little more about me</h2>
+
+                    <div id="card-container">
+                        <div class="card" style="width: 23rem;">
+                            <a href="https://you.ubc.ca/ubc_programs/computer-engineering/" target="_blank">
+                                <img src="images/ece-logo.png" class="card-img-top" alt="ECE logo">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">UBC Computer Engineering Student</h5>
+                                <p class="card-text">Currently studying Computer Engineering at the University of British Columbia</p>
+                            </div>
+                        </div>
+
+                        <div class="card" style="width: 23rem;">
+                            <a href="https://www.ubclaunchpad.com" target="_blank">
+                                <img src="images/launchpad-rocket.png" class="card-img-top" alt="LaunchPad rocket">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">LaunchPad Software Engineering Team</h5>
+                                <p class="card-text">Collaborating on a food waste reduction application as a primary iOS Developer</p>
+                            </div>
+                        </div>
+
+                        <div class="card" style="width: 23rem;">
+                            <a href="projects.html">
+                                <img src="images/lightbulb.png" class="card-img-top" alt="Creative Lightbulb">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">Creative Independent Developer</h5>
+                                <p class="card-text">Love building passion projects and refining the art and design that goes into them</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
             </div>
 
-        </section>
+            <div class="section" id="section3">
+                <section id="project-section">
+                    <div class="slide" id="slide0">
+                        <div class="jumbotron" id="project-intro">
+                            <h1 class="display-4">Personal Projects</h1>
+                            <hr class="my-4">
+                            <p class="lead">Here are some of the things I've been working on in my free time! Source code and detailed descriptions of each project are available on my GitHub page.</p>
+                            <a class="btn btn-light" href="https://github.com/wrenliang" target="_blank" role="button">GitHub</a>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="jumbotron" id="project-intro">
+                            <img src="images/weather-slide.png" class="card-img-top" />
+                            <hr class="my-4">
+                            <h1 class="display-4">iOS Weather App</h1>
+                            <a class="btn btn-light" href="https://github.com/wrenliang/Weather-fetcher" target="_blank" role="button">Learn more</a>
+                        </div>
+                    </div>
+                    <div class="slide"> <h1>Slide 3</h1> 
+                        <div class="jumbotron" id="project-intro">
+                            <img src="images/arduino-slide.png" class="card-img-top" />
+                            <hr class="my-4">
+                            <h1 class="display-4">Remote Control Arduino Car</h1>
+                            <a class="btn btn-light" href="https://github.com/wrenliang/ArduinoCar-BT-remote" target="_blank" role="button">Learn more</a>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="jumbotron" id="project-intro">
+                            <img src="images/website-slide.png" class="card-img-top" />
+                            <hr class="my-4">
+                            <h1 class="display-4">Personal website</h1>
+                            <p class="lead">(This nifty thing)</p>
+                            <a class="btn btn-light" href="https://github.com/wrenliang/wrenliang.github.io" target="_blank" role="button">Learn more</a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+
+
+
+
 	</body>
 </html>

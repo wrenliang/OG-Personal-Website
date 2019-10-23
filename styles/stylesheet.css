@@ -401,11 +401,40 @@ li a:hover {
 
 
 #project-section{
-    background-color: blue;
+    background-image: url(../images/technology-backdrop-edit.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.jumbotron {
+    margin: auto;
+    width: 50%;
+}
+
+#project-intro {
+    background-color: transparent;
+    text-align: center;
+}
+
+#project-intro h1 {
+    color: white;
+    font-weight: 100;
+}
+
+#project-intro p {
+    color: white;
+    font-weight: 100;
 }
 
 #slide0{
-    background-color: green;
+    text-align: center;
+    justify-content: center;
+}
+
+#slide1 {
+    text-align: center;
+    justify-content: center;
 }
 
 /*---Projects Page---*/

@@ -339,6 +339,7 @@ li a:hover {
     background-attachment: scroll;
     width: 100vw;
     height: 100vh;
+    margin-bottom: 0px;
 }
 
 .overview-text {

@@ -336,8 +336,8 @@ li a:hover {
 }
 
 #little-more {
-    padding-top: 1.25em;
-    padding-bottom: 1.15em;
+    padding-top: 10vh;
+    padding-bottom: 5vh;
 }
 
 #card-container {

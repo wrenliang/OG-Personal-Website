@@ -335,11 +335,9 @@ li a:hover {
     text-align: center;
 }
 
-#hey-there{
-    padding-top: 1em;
-}
-
-#little-more{
+#little-more {
+    padding-top: 1.25em;
+    padding-bottom: 1.15em;
 }
 
 #card-container {

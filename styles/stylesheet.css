@@ -123,33 +123,19 @@ li a:hover {
 }
 
 
-/*DELETED*/
-/*
-.highlights-list {
-    background-color: transparent;
-    width: 100%;
-    position: relative;
-    top: 65vh;
-    padding-bottom: 3vh;
+/*---Photo creds---*/
+.photocred {
+    text-align: right;
+    position: absolute;
+    right: 4em;
+    bottom: 2em;
+    padding-bottom: 0;
 
-    z-index: 0;
 }
 
-.highlights-list li {
+.photocred p {
     color: white;
-    width: 20vw;
-    border-left: 2px solid;
-    border-right: 2px solid;
 }
-
-.highlights-list li h3 {
-    font-weight: normal;
-    font-size: 26px;
-    text-align: center;
-
-}
-
-*/
 
 
 /*--Slideshow---*/
@@ -430,6 +416,76 @@ li a:hover {
 
 #slide0{
 }
+
+
+/*---Passions section---*/
+#passions-wrapper {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../images/Passion-photo.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+}
+
+#passion-text{
+    padding-top: 35vh;
+    color: white;
+}
+
+#passion-work-in-progress {
+    padding-top: 5vh;
+    color: white;
+}
+
+#passion-later-updates {
+    padding-top: 5vh;
+    color: white;
+}
+
+
+/*---Contacts section---*/
+#get-in-touch {
+    padding-top: 15vh;
+    color: white;
+}
+
+#best-contact-way {
+    padding-top: 5vh;
+    color: white;
+}
+
+#contacts-wrapper {
+    background-image: url(../images/Contacts-background.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+}
+
+#section5 {
+
+}
+
+
+#contact-card-container{
+    padding-top: 10vh;
+    display: flex;
+    justify-content: space-around;
+}
+
+#github-icon {
+}
+
+#resume-button{
+    padding-top: 10vh;
+    display: flex;
+    justify-content: center;
+}
+
 
 
 /*---Projects Page---*/

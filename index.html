@@ -15,108 +15,178 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js" async></script>
     <script type="text/javascript" src="scripts/homePage.js"></script>
 </head>
-	<body class="home">
-		<nav id="main-nav">
-            <ul id="left-nav">
-                <li > <a id="homepage-link" href="index.html" title="Home"> Wren Liang </a> </li>
-            </ul>
-			<ul id="right-nav">
-				<li> <a id="projects-link" href="#" title="Projects">Projects</a>
-				<li> <a id="passion-link" href="#" title="Passion">Passion</a>
-				<li> <a id="resume-link" href="resume.html" target="_blank" title="Resume">Resume</a>
-			</ul>
-		</nav>
+<body class="home">
+    <nav id="main-nav">
+        <ul id="left-nav">
+            <li> <a id="homepage-link" href="index.html" title="Home"> Wren Liang </a> </li>
+        </ul>
+        <ul id="right-nav">
+            <li> <a id="projects-link" href="#" title="Projects">Projects</a>
+            <li> <a id="passion-link" href="#" title="Passion">Passion</a>
+            <li> <a id="resume-link" href="resume.html" target="_blank" title="Contact">Contact</a>
+        </ul>
+    </nav>
 
-        <div id="fullpage">
-            <div class="section" id="section0">
-                <section id="intro-container">
-                    <div class="content">
-                        <h1 class="ml12" id="welcome"> Welcome, my name is Wren </h1>
-                        <a id="down-arrow">
-                            <img src="images/down-arrow-white.png" alt="Down arrow" style="width:100px;height:75px;border:0;" />
+    <div id="fullpage">
+        <div class="section" id="section0">
+            <section id="intro-container">
+                <div class="content">
+                    <h1 class="ml12" id="welcome"> Welcome, my name is Wren </h1>
+                    <a id="down-arrow">
+                        <img src="images/down-arrow-white.png" alt="Down arrow" style="width:100px;height:75px;border:0;" />
+                    </a>
+                </div>
+            </section>
+        </div>
+        <div class="section" id="section1">
+            <section id="overview-me-container">
+                <h2 class="overview-text" id="hey-there">Hey there!</h2>
+                <h2 class="overview-text" id="little-more">Here's a little more about me</h2>
+
+                <div id="card-container">
+                    <div class="card" style="width: 25vw;">
+                        <a href="https://you.ubc.ca/ubc_programs/computer-engineering/" target="_blank">
+                            <img src="images/ece-logo.png" class="card-img-top" alt="ECE logo">
                         </a>
+                        <div class="card-body">
+                            <h5 class="card-title">UBC Computer Engineering Student</h5>
+                            <p class="card-text">Currently studying Computer Engineering at the University of British Columbia</p>
+                        </div>
                     </div>
-                </section>
-            </div>
-            <div class="section" id="section1">
-                <section id="overview-me-container">
-                    <h2 class="overview-text" id="hey-there">Hey there!</h2>
-                    <h2 class="overview-text" id="little-more">Here's a little more about me</h2>
 
-                    <div id="card-container">
-                        <div class="card" style="width: 25vw;">
-                            <a href="https://you.ubc.ca/ubc_programs/computer-engineering/" target="_blank">
-                                <img src="images/ece-logo.png" class="card-img-top" alt="ECE logo">
-                            </a>
-                            <div class="card-body">
-                                <h5 class="card-title">UBC Computer Engineering Student</h5>
-                                <p class="card-text">Currently studying Computer Engineering at the University of British Columbia</p>
-                            </div>
+                    <div class="card" style="width: 25vw;">
+                        <a href="https://www.ubclaunchpad.com" target="_blank">
+                            <img src="images/launchpad-rocket.png" class="card-img-top" alt="LaunchPad rocket">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">LaunchPad Software Engineering Team</h5>
+                            <p class="card-text">Collaborating on a food waste reduction application as a primary iOS Developer</p>
                         </div>
+                    </div>
 
-                        <div class="card" style="width: 25vw;">
-                            <a href="https://www.ubclaunchpad.com" target="_blank">
-                                <img src="images/launchpad-rocket.png" class="card-img-top" alt="LaunchPad rocket">
-                            </a>
-                            <div class="card-body">
-                                <h5 class="card-title">LaunchPad Software Engineering Team</h5>
-                                <p class="card-text">Collaborating on a food waste reduction application as a primary iOS Developer</p>
-                            </div>
+                    <div class="card" style="width: 25vw;">
+                        <a href="projects.html">
+                            <img src="images/lightbulb.png" class="card-img-top" alt="Creative Lightbulb">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">Creative Independent Developer</h5>
+                            <p class="card-text">Love building passion projects and refining the art and design that goes into them</p>
                         </div>
+                    </div>
+                </div>
+            </section>
+        </div>
 
-                        <div class="card" style="width: 25vw;">
-                            <a href="projects.html">
-                                <img src="images/lightbulb.png" class="card-img-top" alt="Creative Lightbulb">
-                            </a>
-                            <div class="card-body">
-                                <h5 class="card-title">Creative Independent Developer</h5>
-                                <p class="card-text">Love building passion projects and refining the art and design that goes into them</p>
-                            </div>
-                        </div>
+        <div class="section" id="section3">
+            <section id="project-section">
+                <div class="slide" id="slide0">
+                    <div class="jumbotron" id="project-intro">
+                        <h1 class="display-4">Personal Projects</h1>
+                        <hr class="my-4">
+                        <p class="lead">Here are some of the things I've been working on in my free time! Source code and detailed descriptions of each project are available on my GitHub page.</p>
+                        <a class="btn btn-light" href="https://github.com/wrenliang" target="_blank" role="button">GitHub</a>
                     </div>
-                </section>
-            </div>
+                </div>
+                <div class="slide">
+                    <div class="jumbotron" id="project-intro">
+                        <img src="images/weather-slide.png" class="card-img-top" />
+                        <hr class="my-4">
+                        <h1 class="display-4">iOS Weather App</h1>
+                        <a class="btn btn-light" href="https://github.com/wrenliang/Weather-fetcher" target="_blank" role="button">Learn more</a>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="jumbotron" id="project-intro">
+                        <img src="images/arduino-slide.png" class="card-img-top" />
+                        <hr class="my-4">
+                        <h1 class="display-4">Remote Control Arduino Car</h1>
+                        <a class="btn btn-light" href="https://github.com/wrenliang/ArduinoCar-BT-remote" target="_blank" role="button">Learn more</a>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="jumbotron" id="project-intro">
+                        <img src="images/website-slide.png" class="card-img-top" />
+                        <hr class="my-4">
+                        <h1 class="display-4">Personal website</h1>
+                        <p class="lead">You're looking right now!</p>
+                        <a class="btn btn-light" href="https://github.com/wrenliang/wrenliang.github.io" target="_blank" role="button">Learn more</a>
+                    </div>
+                </div>
+            </section>
+        </div>
 
-            <div class="section" id="section3">
-                <section id="project-section">
-                    <div class="slide" id="slide0">
-                        <div class="jumbotron" id="project-intro">
-                            <h1 class="display-4">Personal Projects</h1>
-                            <hr class="my-4">
-                            <p class="lead">Here are some of the things I've been working on in my free time! Source code and detailed descriptions of each project are available on my GitHub page.</p>
-                            <a class="btn btn-light" href="https://github.com/wrenliang" target="_blank" role="button">GitHub</a>
-                        </div>
-                    </div>
-                    <div class="slide">
-                        <div class="jumbotron" id="project-intro">
-                            <img src="images/weather-slide.png" class="card-img-top" />
-                            <hr class="my-4">
-                            <h1 class="display-4">iOS Weather App</h1>
-                            <a class="btn btn-light" href="https://github.com/wrenliang/Weather-fetcher" target="_blank" role="button">Learn more</a>
-                        </div>
-                    </div>
-                    <div class="slide">
-                        <div class="jumbotron" id="project-intro">
-                            <img src="images/arduino-slide.png" class="card-img-top" />
-                            <hr class="my-4">
-                            <h1 class="display-4">Remote Control Arduino Car</h1>
-                            <a class="btn btn-light" href="https://github.com/wrenliang/ArduinoCar-BT-remote" target="_blank" role="button">Learn more</a>
-                        </div>
-                    </div>
-                    <div class="slide">
-                        <div class="jumbotron" id="project-intro">
-                            <img src="images/website-slide.png" class="card-img-top" />
-                            <hr class="my-4">
-                            <h1 class="display-4">Personal website</h1>
-                            <p class="lead">(This nifty thing)</p>
-                            <a class="btn btn-light" href="https://github.com/wrenliang/wrenliang.github.io" target="_blank" role="button">Learn more</a>
-                        </div>
-                    </div>
-                </section>
+        <div class="section" id="section4">
+            <div id="passions-wrapper">
+                <h2 class="overview-text" id="passion-text">Passions</h2>
+                <h2 class="overview-text" id="passion-work-in-progress">This page is still a work in progress!</h2>
+                <h2 class="overview-text" id="passion-later-updates">Check back later for updates :)</h2>
             </div>
         </div>
-        
 
-	</body>
+        <div class="section" id="section5">
+            <div id="contacts-wrapper">
+                <h2 class="overview-text" id="get-in-touch">Let's get in touch!</h2>
+
+                <div id="contact-card-container">
+                    <div class="card" style="background-color: transparent;">
+                        <a href="https://github.com/wrenliang" target="_blank">
+                            <i class="fab fa-github-alt fa-10x" id="github-icon"></i>
+                        </a>
+                        <div class="card-body">
+                        </div>
+                    </div>
+
+                    <div class="card" style="background-color: transparent;">
+                        <a href="https://www.linkedin.com/in/wren-liang/" target="_blank">
+                            <i class="fab fa-linkedin fa-10x" id="linkedin-icon"></i>
+                        </a>
+                        <div class="card-body">
+                        </div>
+                    </div>
+
+                    <div class="card" style="background-color: transparent;">
+                        <a href="tel:5877031208">
+                            <i class="fas fa-mobile fa-10x" id="phone-icon"></i>
+                        </a>
+                        <div class="card-body">
+                        </div>
+                    </div>
+
+                    <div class="card" style="background-color: transparent;">
+                        <a href="mailto:wren.liang@gmail.com">
+                            <i class="fas fa-inbox fa-10x" id="email-icon"></i>
+                        </a>
+                        <div class="card-body">
+                        </div>
+                    </div>
+                </div>
+
+                <h2 class="overview-text" id="best-contact-way">The best way to contact me is through email or LinkedIn</h2>
+
+                <div  id="resume-button">
+                    <a class="btn btn-outline-light" href="images/Wren-Resume.pdf" target="_blank" role="button">Here's a copy of my resume!</a>
+                </div>
+
+
+                <div class="photocred">
+                    <p></p>
+                    <p></p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous" async></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous" async></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js" async></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.7/fullpage.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js" async></script>
+    <script type="text/javascript" src="scripts/homePage.js"></script>
+    <script src="https://kit.fontawesome.com/924a340b24.js"></script>
+
+</body>
     
 </html>

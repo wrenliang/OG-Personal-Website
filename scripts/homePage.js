@@ -22,9 +22,6 @@ window.onload = function () {
         }
     }
     
-
-
-
     //TESTING THE CP CODE
     // Wrap every letter in a span
     var textWrapper = document.querySelector('.ml12');
@@ -88,6 +85,20 @@ window.onload = function () {
     //methods
     fullpage_api.setAllowScrolling(true);
 
+
+
+    var projectLink = document.getElementById("projects-link");
+    var passionLink = document.getElementById("passion-link");
+
+    projectLink.onclick() = function () {
+        fullpage.moveTo(2);
+    }
+
+
+    passionLink.onclick() = function () {
+        fullpage.moveTo(1);
+    }
+    
 
 }
 

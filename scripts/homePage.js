@@ -155,8 +155,6 @@ window.onscroll = function () {
         leftNav.classList.remove("nav-colored");
         rightNav.classList.remove("nav-colored");
     }
-
-    alert();
 }
 
 

@@ -92,6 +92,10 @@ li a:hover {
     color: white;
 }
 
+.nav-highlight {
+    font-weight: 400
+}
+
 /*---Nav bar finish---*/
 
 

@@ -429,6 +429,22 @@ li a:hover {
     background-size: cover;
 }
 
+#passion-text{
+    padding-top: 35vh;
+    color: white;
+}
+
+#passion-work-in-progress {
+    padding-top: 5vh;
+    color: white;
+}
+
+#passion-later-updates {
+    padding-top: 5vh;
+    color: white;
+}
+
+
 /*---Contacts section---*/
 #get-in-touch {
     padding-top: 15vh;

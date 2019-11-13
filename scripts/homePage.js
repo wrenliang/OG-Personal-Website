@@ -47,8 +47,9 @@ window.onload = function () {
     new fullpage('#fullpage', {
         //options here
         menu: '#menu',
+        licenseKey: 'k#7EkQX$k8',
 
-        autoScrolling:true,
+        autoScrolling: true,
         scrollHorizontally: true,
 
         onLeave: function (origin, destination, direction) {
@@ -114,25 +115,22 @@ window.onload = function () {
 
     //methods
     fullpage_api.setAllowScrolling(true);
-
-
-
-    var projectLink = document.getElementById("projects-link");
-    var passionLink = document.getElementById("passion-link");
-
-    projectLink.onclick() = function () {
-        fullpage.moveTo(2);
-    }
-
-
-    passionLink.onclick() = function () {
-        fullpage.moveTo(1);
-    }
+    
     
 
 }
 
+function projectClick() {
+    fullpage_api.moveTo(3);
+}
 
+function passionClick() {
+    fullpage_api.moveTo(4);
+}
+
+function contactClick() {
+    fullpage_api.moveTo(5);
+}
 
 
 

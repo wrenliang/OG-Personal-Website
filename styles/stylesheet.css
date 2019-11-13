@@ -53,6 +53,7 @@ h2 {
     width: 50%;
     display: flex;
     justify-content: center;
+    color: white;
 }
 
 #right-nav li a:hover {

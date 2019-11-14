@@ -56,9 +56,8 @@ h2 {
     color: white;
 }
 
-#right-nav li a:hover {
+#right-nav li p:hover {
     text-decoration: none;
-    color: white;
 }
 
 li {
@@ -70,7 +69,7 @@ li {
 
 }
 
-li a {
+li p {
     display: block;
     padding: 8px 24px;
 
@@ -81,7 +80,7 @@ li a {
     text-decoration: none;
     }
 
-li a:hover {
+li p:hover {
     font-weight: 400;
 }
 
